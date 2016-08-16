@@ -1,0 +1,26 @@
+shiro:
+  iniConfigs: ["file:shiro.ini"]
+
+publicKeyFilename: "/etc/ssl/certs/dw-bnr-auth-0.cloudapp.net.cert.pem"
+
+apiKeyId: 154TLQ65PNF584V7KWI3ILFU7
+apiKeySecret: sDQcpO8yGXkVucQFl/Og9QPcP4R5NXDDBLJnWGrsDG8
+apiUrl: https://api.stormpath.com/v1/applications/1dbLlJbQzHh0KnXai01QWm
+
+katharsis:
+  host:          http://localhost:8080
+  searchPackage: katharsisResources
+
+server:
+  type: simple
+  applicationContextPath: /
+  adminContextPath: /admin
+  connector:
+    type: http
+    port: 8080
+
+logging:
+  level: INFO
+
+  appenders:
+    - type: console
